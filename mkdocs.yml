@@ -1,3 +1,41 @@
-site_name: Min Dokumentasjon
+site_name: Makerspace Dokumentasjon
+site_url: https://tourbino.github.io/mkdocs-test/ # <--- BYTT UT MED DIN URL
+repo_url: https://github.com/tourbino/mkdocs-test # <--- BYTT UT MED DIN REPO-URL
+repo_name: Se på GitHub
+
 theme:
   name: material
+  # logo: assets/logo.svg # Kan legges til senere
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Bytt til mørkt tema
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Bytt til lyst tema
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+nav:
+  - 'Hjem': 'index.md'
+  - 'Kjeller':
+    - 'Oversikt Kjeller': 'kjeller/index.md'
+    - 'CNC-rom': 'kjeller/cnc_rom.md'
+    - 'Høvelrom': 'kjeller/hovelrom.md'
+    - 'Sagrom': 'kjeller/sagrom.md'
+  - '1. etasje':
+    - 'Oversikt 1. etasje': 'etasje1/index.md'
+    - 'Kreativt Rom': 'etasje1/kreativt_rom.md'
+    - 'Keramikkrom': 'etasje1/keramikkrom.md'
+    - 'Møterom': 'etasje1/moterom.md'
+  - '2. etasje':
+    - 'Oversikt 2. etasje': 'etasje2/index.md'
+    - '3D-printerrom': 'etasje2/3dprinter_rom.md'
+    - 'Elektronikklab': 'etasje2/elektronikklab.md'
+  - 'Sikkerhet': 'sikkerhet.md'
