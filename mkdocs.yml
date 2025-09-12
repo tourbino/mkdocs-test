@@ -16,7 +16,6 @@ theme:
         icon: material/weather-night
         name: Bytt til lyst tema
   features:
-    - navigation.tabs
     - navigation.sections
     - navigation.top
     - search.suggest
