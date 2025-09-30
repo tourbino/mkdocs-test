@@ -20,7 +20,7 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
-
+    - navigation.tabs
 plugins:
   - awesome-pages
 
